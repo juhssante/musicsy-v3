@@ -26,7 +26,7 @@ func defaults() {
 
 	viper.SetDefault(PORT, port)
 	viper.SetDefault(ADDRESS, "0.0.0.0")
-	viper.SetDefault(DATABASE_URL, "mongodb+srv://talksy-system-user-admin:mLP6hu9AaQ6mZI2l@talksy-jtbyz.mongodb.net/Talksy")
+	viper.SetDefault(DATABASE_URL, "mongodb+srv://musicsy-db-user:kcz27Z3SOmQYamsm@musicsy-znbqb.mongodb.net/musicsy")
 
 }
 
