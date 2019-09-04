@@ -1,6 +1,6 @@
-# Talksy Server
+# Musicsy V3
 
-It's like whatsapp except its meant for incompetent fools (@ashwatdd)
+It's like spotify premium with all the premium features.
 
 lib used:
 
