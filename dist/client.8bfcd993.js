@@ -9,4 +9,4 @@ var t=require("preact");function n(t,n){for(var r in n)t[r]=n[r];return t}functi
 },{"preact":"qiCd"}],"zo2T":[function(require,module,exports) {
 "use strict";var n=require("preact"),t=r(require("unistore")),e=require("unistore/preact");function r(n){return n&&n.__esModule?n:{default:n}}var u=(0,t.default)({count:0}),o=function(n){return{increment:function(n){return{count:n.count+1}}}},c=(0,e.connect)("count",o)(function(t){var e=t.count,r=t.increment;return(0,n.h)("div",null,(0,n.h)("p",null,"Count: ",e),(0,n.h)("p",null,"https://musicsy-v3.herokuapp.com/api"),(0,n.h)("button",{onClick:r},"Increment"))}),i=function(){return(0,n.h)(e.Provider,{store:u},(0,n.h)(c,null))};(0,n.render)((0,n.h)(i,null),document.getElementById("root"));
 },{"preact":"qiCd","unistore":"qY4q","unistore/preact":"o6ac"}]},{},["zo2T"], null)
-//# sourceMappingURL=static/client.8bfcd993.js.map
+//# sourceMappingURL=/static/client.8bfcd993.js.map
