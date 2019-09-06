@@ -9,6 +9,7 @@
   "scripts": {
     "dev-server": "nodemon --exec go run App ./App.go --ignore client/",
     "dev-client": "npx parcel client/index.html",
+    "build-client": "npx parcel build client/index.html --public-url ./static/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

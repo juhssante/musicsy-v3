@@ -1,2 +1,2 @@
-release: npx parcel build client/index.html --public-url ./static/
+release: npm run build-client
 web: bin/App
