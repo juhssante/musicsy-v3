@@ -117,3 +117,7 @@ fabric.properties
 
 application.yml
 App
+
+.cache
+dist
+node_modules

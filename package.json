@@ -1,24 +1,33 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "This boilerplate is for applications using go with mongodb",
+  "description": "It's like spotify premium with all the premium features",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "dev": "nodemon --exec go run App ./App.go --ignore client/",
+    "dev-server": "nodemon --exec go run App ./App.go --ignore client/",
+    "dev-client": "npx parcel client/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harrySullivan/talksy-server.git"
+    "url": "git+https://github.com/harrySullivan/musicsy-v3.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/harrySullivan/talksy-server/issues"
+    "url": "https://github.com/harrySullivan/musicsy-v3/issues"
   },
-  "homepage": "https://github.com/harrySullivan/talksy-server#readme"
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "preact": "^8.5.2",
+    "unistore": "^3.4.1"
+  },
+  "homepage": "https://github.com/harrySullivan/musicsy-v3#readme"
 }
