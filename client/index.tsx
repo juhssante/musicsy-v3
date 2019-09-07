@@ -1,32 +1,16 @@
-import { h, render } from 'preact';
+import { h, render } from 'preact'
+import { Provider } from 'unistore/preact'
+import Router from './router'
 
 import createStore from 'unistore'
-import { Provider, connect } from 'unistore/preact'
 
-let store = createStore({ count: 0 })
+const store = createStore({ count: 0 })
 
-// If actions is a function, it gets passed the store:
-let actions = store => ({
-  // Actions can just return a state update:
-  increment(state) {
-    return { count: state.count + 1 }
-  }
-})
+const app = document.getElementById('root')
 
-
-const App = connect('count', actions)(
-  ({ count, increment }) => (
-    <div>
-      <p>Count: {count}</p>
-      <p>{process.env.SERVER_URL}</p>
-      <button onClick={increment}>Increment</button>
-    </div>
-  )
-)
-
-const Root = () => (
+render(
   <Provider store={store}>
-    <App />
-  </Provider>
+    <Router />
+  </Provider>,
+  app
 )
-render(<Root />, document.getElementById('root'));
