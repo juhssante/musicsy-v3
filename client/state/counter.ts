@@ -1,5 +1,3 @@
-import createStore from 'unistore'
-
 export interface State {
   count: number;
 }
@@ -12,5 +10,3 @@ export let actions = () => ({
     return { count: state.count - 1 }
   }
 })
-
-export default (initialState: State) => createStore(initialState)

@@ -4,7 +4,7 @@ import Router from './router'
 
 import createStore from 'unistore'
 
-const store = createStore({ count: 0 })
+const store = createStore({ count: 45 })
 
 const app = document.getElementById('root')
 
