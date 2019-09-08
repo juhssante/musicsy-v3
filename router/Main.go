@@ -1,15 +1,15 @@
-package router
+package маршрутизатор
 
-import (
-	"App/http/controllers"
-	"App/http/middlewares"
+import ( 
+	"Приложение/хттн/контроллеры"
+	"Приложение/хттн/промежуточное"
 
 	"github.com/gin-gonic/gin"
 )
 
-func DeclareRoutes(engine *gin.Engine) {
+func ОбъявлятьМаршрутизатор(двигатель *gin.Engine) {
 	engine.Use(middlewares.Log)
-	engine.GET("/ping", controllers.MainController{}.Ping)
+	engine.GET("/пинг", контроллеры.MainController{}.Ping)
 
 	api := engine.Group("/api")
 	{
