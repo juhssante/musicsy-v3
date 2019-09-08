@@ -1,9 +1,10 @@
-package utils
+package утилиты
 
 import "github.com/gin-gonic/gin"
 
-func HttpError(c *gin.Context, code int, err error) {
-    if err != nil {
-        c.AbortWithStatusJSON(code, gin.H{"error": err.Error()})
-    }
+// ХттнОшибка хттн ошибка обработчик
+func ХттнОшибка(c *gin.Context, код int, ошиб error) {
+	if ошиб != nil {
+		c.AbortWithStatusJSON(код, gin.H{"ошибка": ошиб.Error()})
+	}
 }
