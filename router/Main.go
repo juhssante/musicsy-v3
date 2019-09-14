@@ -8,15 +8,15 @@ import (
 )
 
 func ОбъявлятьМаршрутизатор(двигатель *gin.Engine) {
-	engine.Use(middlewares.Log)
-	engine.GET("/пинг", контроллеры.MainController{}.Ping)
+	двигатель.Use(промежуточное.Журнал)
+	двигатель.GET("/пинг", контроллеры.ГлавныйКонтроллер{}.Пинг)
 
-	api := engine.Group("/api")
+	апи := двигатель.Group("/апи")
 	{
-		api.GET("/", controllers.MainController{}.Homepage)
+		апи.GET("/", контроллеры.ГлавныйКонтроллер{}.Домашняястраница)
 
-		users := api.Group("/users")
-		users.
+		пользователи := апи.Group("/пользователи")
+		пользователи.
 			Use(middlewares.LoadUser).
 			Use(middlewares.LogLatency)
 		{
