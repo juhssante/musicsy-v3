@@ -1,6 +1,6 @@
 # Musicsy V3
 
-It's like spotify premium with all the premium features.
+It's like spotify premium **with** all the premium features.
 
 lib used:
 
