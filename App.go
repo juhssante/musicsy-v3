@@ -22,6 +22,7 @@ func init() {
     Logger.Load()
     database.NewConnection(viper.GetString(Config.DATABASE_URL))
 
+
 }
 
 func main() {
